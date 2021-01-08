@@ -56,7 +56,7 @@ tabelaprebivalci[tabelaprebivalci == "Primorsko-notranjska"] <- "Notranjsko-kra�
 
 # združim tabela1nova in tabelaprebivalci
 
-tabela1novadijaki <- tabela1nova[1:120,] %>% mutate_all(as.character)
+tabela1novadijaki <- tabela1nova %>% filter(kategorija == "dijaki", regija != "Stalno bivališče neznano ali v tujini") %>% mutate_all(as.character)
 tabela1novadijaki <- subset (tabela1novadijaki, select = -kategorija)
 skupnatabela <- left_join(tabela1novadijaki, tabelaprebivalci, by = c("regija", "leto"))
 skupnatabela$stevilo.x <- as.numeric(skupnatabela$stevilo.x)
@@ -65,7 +65,7 @@ skupnatabela <- transform(skupnatabela, delez = (stevilo.x / stevilo.y)/10)# del
 skupnatabela <- subset(skupnatabela, select = - stevilo.x)
 skupnatabela <- subset(skupnatabela, select = - stevilo.y)
 
-tabela1novadiplomanti <- tabela1nova[131:250,] %>% mutate_all(as.character)
+tabela1novadiplomanti <- tabela1nova %>% filter(kategorija == "diplomanti", regija != "Stalno bivališče neznano ali v tujini") %>% mutate_all(as.character)
 tabela1novadiplomanti <- subset (tabela1novadiplomanti, select = -kategorija)
 skupnatabela2 <- left_join(tabela1novadiplomanti, tabelaprebivalci, by = c("regija", "leto"))
 skupnatabela2$stevilo.x <- as.numeric(skupnatabela2$stevilo.x)
