@@ -127,9 +127,13 @@ tortnidiagram
 source("analiza/analiza.r", encoding="UTF-8")
 ```
 
+Spodnji graf nam prikazuje kako se razmerje med številom dijakov in številom prebivalcev v Sloveniji spreminja, kot lahko vidimo, je trend trenutno padajoč, kar pomeni, da je kljub višji narodnosti, dijakov vedno manj. To pomeni, da je trenutno v Sloveniji več otrok nižje starosti in več ljudi, ki so že naredili srednjo šolo. Pričakujemo lahko, da bo trend kmalu naraščajoč.
+
 ```{r graf12, echo=FALSE, fig.align='center'}
 graf12
 ```
+
+Naslednji graf pa nam prikazuje razmerje med številom diplomantov in številom prebivalcev v Sloveniji. Kot lahko opazimo je ta trend veliko bolj nenihajoč kot pri prejšnjem grafu. Razberemo lahko, da v Sloveniji letno diplomira približno 20 tisoš študentov.
 
 ```{r graf11, echo=FALSE, fig.align='center'}
 graf11
