@@ -1,17 +1,8 @@
 library(shiny)
 
-shinyUI(fluidPage(
-  
-  titlePanel("Slovenske občine"),
-  
-  tabsetPanel(
-      tabPanel("Velikost družine",
-               DT::dataTableOutput("druzine")),
-      
-      tabPanel("Število naselij",
-               sidebarPanel(
-                  uiOutput("pokrajine")
-                ),
-               mainPanel(plotOutput("naselja")))
-    )
-))
+fluidPage(
+  selectInput(inputId = 'izobrazevanje', label = 'Izberite vrsto izobrazevanja',
+              choices = unique(tabela2nova$izobrazevanje), 
+              selected = unique(tabela2nova$izobrazevanje)[1]),
+  plotOutput('vrste')
+)

@@ -7,6 +7,7 @@ output:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+runtime: shiny
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -141,3 +142,10 @@ graf14
 
 ***
 
+### Shiny
+
+V spodnjem grafičnem prikazu pa je predstavljeno število dijakov - glede na spol - v posamezni vrsti sekundarnega izobraževanja, ki jo bralec izbere sam.
+
+```{r shiny}
+shinyAppDir("shiny", options=list(width="100%", height=600))
+```
