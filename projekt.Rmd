@@ -80,23 +80,26 @@ Pred analizo teh podatkov sem si zastavila naslednja vprašanja:
 - Kam se v zadnjih desetih letih najbolj usmerjajo mladi, ko se odločajo za srednjo šolo?
 - Kakšen je delež diplomantov, ki diplomira na rednem študiju v primerjavi z izrednim študiju?
 
-Prvi graf prikazuje povprečno število dijakov po regijah v zadnjih desetih letih(2009-2018).
 
-```{r graf1, echo=FALSE, fig.align='center'}
-graf1
+
+```{r graf_povprecja_po_regijah, echo=FALSE, fig.align='center'}
+graf_povprecja_po_regijah
 ```
 
-Spodnji zemljevid pa nam prikazuje povprečno število diplomantov po regijah v zadnjih desetih letih. Glede na število dijakov in število diplomantov lahko razberemo, da je številka dijakov veliko večja kot številka diplomantov, kar pomeni da veliko ljudi ne nadaljuje svojega šolanja na faksu in se raje zaposlijo, ali pa pred diplomiranjem faks pustijo in se zaposlijo. Kot primer lahko vzamemo npr.Osrednje-slovensko regijo, kjer vidimo, da je v zadnjih 10 letih diplomirala le dobra četrtina vseh dijakov v zadnjih desetih letih.
+Prvi graf prikazuje povprečno število dijakov in diplomantov po regijah v zadnjih desetih letih(2009-2018).Glede na število dijakov in število diplomantov lahko razberemo, da je številka dijakov veliko večja kot številka diplomantov, kar pomeni da veliko ljudi ne nadaljuje svojega šolanja na faksu in se raje zaposlijo, ali pa pred diplomiranjem faks pustijo in se zaposlijo. Kot primer lahko vzamemo npr.Osrednje-slovensko regijo, kjer vidimo, da je v zadnjih 10 letih diplomirala le dobra četrtina vseh dijakov v zadnjih desetih letih.
 
-```{r zemljevid1, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Povprečno število diplomantov po regijah v zadnjih desetih letih'}
- zemljevid1
-```
 
-Naslednji zemljevid pa nam z razliko od prejšnjega pove bolj koristno informacijo o številu diplomantov, ki se prikazuje kot delež diplomantov glede na število prebivalcev v določeni regiji.
-
-```{r zemljevid2, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Povprečno število diplomantov po regijah v zadnjih desetih letih'}
+```{r zemljevid2, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center'}
  zemljevid2
 ```
+
+Ta zemljevid nam z razliko od prejšnjega grafa pove bolj koristno informacijo o številu diplomantov, ki se prikazuje kot delež diplomantov v preučevanih desetih letih glede na število prebivalcev v določeni regiji. Po najmanjšem deležu izstopajo statistične regije na severovzhodu države ter Obalno-kraška regija (med 0,75% in 0,9%). Ravno obratno pa velja na Koroškem in Goriškem, kjer je delež rahlo nad 1%.
+
+```{r zemljevid3, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center'}
+ zemljevid3
+```
+
+Zgornji zemljevid pa nam prikazuje delež dijakov v preučevanih desetih letih glede na število prebivalcev v določeni regiji. Največji delež dijakov pa prav tako lahko vidimo na Koročkem, kjer bilo v povprečju slabih 4,5% prebivalstva dijakov. Ravno obratno pa velja za Zasavsko, Obalno-kraško in Podravsko regijo, kjer se delež giblje med 3 in 3,5 procenti.
 
 Spodnji graf nam prikazuje, v katere izobraževalne programe so se v zadnjih desetih letih vpisovali slovenski dijaki in dijakinje. Iz podatov v grafih lahko razberemo, da so se fantje bolj zanimali za tehniške in druge strokovne programe, medtem ko so se dekleta odločile za splošne in strokovne gimnazijske programe.
 
@@ -111,11 +114,9 @@ Naslednji graf nam prikazuje, katere izobraževalne programe terciarnega izobra�
 graf6
 ```
 
-Spodnji tortni diagram prikazuje razmerje diplomantov v preučevanih desetih letih, ki diplomira na rednem študiju v primerjavi s tistimi, ki diplomirajo na izrednem študiju. Iz podatkov je razvidno, da je število diplomantov na izredne študiju precej manj v primerjavi na rednem.
+![](pie.jpg)
 
-```{r tortnidiagram, echo=FALSE, fig.align='center'}
-tortnidiagram
-```
+Zgornji tortni diagram prikazuje razmerje diplomantov v preučevanih desetih letih, ki diplomira na rednem študiju v primerjavi s tistimi, ki diplomirajo na izrednem študiju. Iz podatkov je razvidno, da je število diplomantov na izrednem študiju precej manjše (približno 20 000) v primerjavi na rednem (približno 70 000).
 
 
 ***
@@ -126,16 +127,16 @@ tortnidiagram
 source("analiza/analiza.r", encoding="UTF-8")
 ```
 
-Spodnji graf nam prikazuje kako se razmerje med številom dijakov in številom prebivalcev v Sloveniji spreminja, kot lahko vidimo, je trend trenutno padajoč, kar pomeni, da je kljub višji narodnosti, dijakov vedno manj. To pomeni, da je trenutno v Sloveniji več otrok nižje starosti in več ljudi, ki so že naredili srednjo šolo. Pričakujemo lahko, da bo trend kmalu naraščajoč.
+Spodnji graf nam prikazuje kako se razmerje med številom dijakov in številom prebivalcev v Sloveniji spreminja, kot lahko vidimo, je trend trenutno padajoč, kar pomeni, da je kljub višji narodnosti, dijakov vedno manj. To pomeni, da je trenutno v Sloveniji več otrok nižje starosti in več ljudi, ki so že naredili srednjo šolo. Pričakujemo lahko, da bo trend kmalu naraščajoč, saj kljub padajočemu trendu število prebivalcev narašča.
 
-```{r graf12, echo=FALSE, fig.align='center'}
-graf12
+```{r graf13, echo=FALSE, fig.align='center'}
+graf13
 ```
 
-Naslednji graf pa nam prikazuje razmerje med številom diplomantov in številom prebivalcev v Sloveniji. Kot lahko opazimo je ta trend veliko bolj nenihajoč kot pri prejšnjem grafu. Razberemo lahko, da v Sloveniji letno diplomira približno 20 tisoš študentov.
+Naslednji graf pa nam prikazuje razmerje med številom diplomantov in številom prebivalcev v Sloveniji. Kot lahko opazimo je ta trend bolj konstanten kot prejšnji. Razberemo lahko, da v Sloveniji letno diplomira približno 20 tisoč študentov.
 
-```{r graf11, echo=FALSE, fig.align='center'}
-graf11
+```{r graf14, echo=FALSE, fig.align='center'}
+graf14
 ```
 
 ***
