@@ -130,7 +130,7 @@ graf14
 
 ***
 
-### Shiny
+# Shiny
 
 V spodnjem grafičnem prikazu je predstavljeno število dijakov glede na spol v posamezni vrsti sekundarnega izobraževanja, ki jo bralec izbere sam.
 
@@ -143,6 +143,8 @@ Naslednji zavihek pa nam prikazuje, katere izobraževalne programe terciarnega i
 
 ***
 
-## Zaključek
+# Zaključek
 
-Tekom analize, sem ugotovila, da so bila nekatere moje domneve napačne. Ena izmed njih je zagotovo ta, da je glede na število prebivalcev, delež dijakov in diplomantov največji v osrednji Sloveniji, kot smo lahko namreč videli, to ni res. Največji delež dijakov in prav tako diplomantov ima Koroška. Poleg tega smo ugotovili, kam se mladi osnovnošolci usmerjajo. Tekom let je viden opazen izpad na poklicnih tehničnih šolah. Na teh poklicnih in strokovnih programih prevladujejo večinoma močki, medtem ko je na splošnih smereh delež žensk večji. Primerjali pa smo tudi število diplomantov na izrednem in rednem študiju. Opazili smo, da je število diplomantov na izrednem študiju trikrat manjše kot na rednem študiju. Vidimo pa tudi, da je v Sloveniji vse več izobraženih ljudi, kar pa menim, da se še nekaj časa nebo spremenilo, saj kot pravijo:"Znanje je moč."
+Tekom analize, sem ugotovila, da so bila nekatere moje domneve napačne. Ena izmed njih je zagotovo ta, da je glede na število prebivalcev, delež dijakov in diplomantov največji v osrednji Sloveniji, kot smo lahko namreč videli, to ni res. Največji delež dijakov in prav tako diplomantov ima Koroška. Poleg tega smo ugotovili, kam se mladi osnovnošolci usmerjajo. Tekom let je viden opazen izpad na poklicnih tehničnih šolah. Na teh poklicnih in strokovnih programih prevladujejo večinoma močki, medtem ko je na splošnih smereh delež žensk večji. Primerjali pa smo tudi število diplomantov na izrednem in rednem študiju. Opazili smo, da je število diplomantov na izrednem študiju trikrat manjše kot na rednem študiju. Vidimo pa tudi, da je v Sloveniji vse več izobraženih ljudi, kar pa menim, da se še nekaj časa ne bo spremenilo, saj kot pravijo:"Znanje je moč."
+
+***

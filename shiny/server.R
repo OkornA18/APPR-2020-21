@@ -28,4 +28,6 @@ shinyServer(function(input, output) {
     
     print(graf.diplomanti)
   })
+  
+  
 })
