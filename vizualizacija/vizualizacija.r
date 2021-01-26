@@ -56,7 +56,7 @@ png(file = "pie.jpg")
 tortni <- pie3D(vol,labels = chem,explode = 0.1, main = 'Razmerje med diplomanti na izrednem ter rednem študiju',col=c('purple','lightblue',clockwise = T))
 dev.off()
 
-# GRAF POVPREČNEGA DELEŽA DIPLOMANTOV V ODSTOTKIH GLEDE NA ŠTEVILO PREBIVALCEV V POSAMEZNI REGIJI V DESETIH LETIH
+# ZEMLJEVIDA POVPREČNEGA DELEŽA DIPLOMANTOV IN DIJAKOV V ODSTOTKIH GLEDE NA ŠTEVILO PREBIVALCEV V POSAMEZNI REGIJI V DESETIH LETIH
 
 povprecjedipl <- skupnatabela2 %>% group_by(regija) %>% summarise(povprecje=sum(delez)/10)
 graf8 <- povprecjedipl %>% ggplot(aes(x=povprecje, y=regija, fill = regija)) + geom_col()
