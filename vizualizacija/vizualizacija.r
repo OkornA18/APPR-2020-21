@@ -76,7 +76,7 @@ zemljevida2$NAME_1[zemljevida2$NAME_1 == "KoroĹˇka"] <- "Koroška"
 zemljevida2$NAME_1[zemljevida2$NAME_1 == "Notranjsko-kraĹˇka"] <- "Notranjsko-kraška"
 zemljevida2$NAME_1[zemljevida2$NAME_1 == "Obalno-kraĹˇka"] <- "Obalno-kraška"
 zemljevid3 <- tm_shape(merge(zemljevida2, povprecjedij, by.x="NAME_1", by.y="regija" )) + 
-  tm_polygons("povprecje",title="Delež",palette="Purples")+ tm_style("grey") + tm_layout(main.title="Povprečni delež dijakov po regijah v zadnjih desetih \nletih glede na število prebivalcev v posamezni regiji")+ tm_text(text='NAME_1', size=0.6)
+  tm_polygons("povprecje",title="Delež",palette="Blues")+ tm_style("grey") + tm_layout(main.title="Povprečni delež dijakov po regijah v zadnjih desetih \nletih glede na število prebivalcev v posamezni regiji")+ tm_text(text='NAME_1', size=0.6)
 
 #graf2 <- ggplot(povprecje.diplomantov.po.regijah, aes(regija, povprecje, group = 1)) + geom_col() + coord_flip() +
 #  labs(x = "Regija", y = "Povprecje", 

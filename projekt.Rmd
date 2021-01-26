@@ -132,7 +132,7 @@ graf14
 
 # Shiny
 
-V spodnjem grafičnem prikazu je predstavljeno število dijakov glede na spol v posamezni vrsti sekundarnega izobraževanja, ki jo bralec izbere sam.
+V spodnjem grafičnem prikazu je predstavljeno število dijakov in diplomantov glede na spol v posamezni vrsti sekundarnega oziroma terciarnega izobraževanja, ki jo bralec izbere sam.
 
 ```{r shiny, echo=FALSE}
 shinyAppDir("shiny", options=list(width="100%", height=600))
