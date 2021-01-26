@@ -102,18 +102,6 @@ Ta zemljevid nam z razliko od prejšnjega grafa pove bolj koristno informacijo o
 
 Zgornji zemljevid pa nam prikazuje delež dijakov v preučevanih desetih letih glede na število prebivalcev v določeni regiji. Največji delež dijakov pa prav tako lahko vidimo na Koročkem, kjer bilo v povprečju slabih 4,5% prebivalstva dijakov. Ravno obratno pa velja za Zasavsko, Obalno-kraško in Podravsko regijo, kjer se delež giblje med 3 in 3,5 procenti.
 
-Spodnji graf nam prikazuje, v katere izobraževalne programe so se v zadnjih desetih letih vpisovali slovenski dijaki in dijakinje. Iz podatov v grafih lahko razberemo, da so se fantje bolj zanimali za tehniške in druge strokovne programe, medtem ko so se dekleta odločile za splošne in strokovne gimnazijske programe.
-
-
-```{r graf5, echo=FALSE, fig.align='center'}
-graf5
-```
-
-Naslednji graf nam prikazuje, katere izobraževalne programe terciarnega izobraževanja so se v letih 2009-2018 vpisovali moški in ženske. Iz podatkov vidimo, da veliko več diplomira žensk ter da je upad števila diplomantov in 2. bolonjske stopnje glede na 3. veliko opaznejši kot iz 1. stopnje na drugo, kar bi lahko pomenilo, da se v zadnjih letih študentje večinoma šolajo do magisterija.
-
-```{r graf6, echo=FALSE, fig.align='center'}
-graf6
-```
 
 ![](pie.jpg)
 
@@ -144,8 +132,17 @@ graf14
 
 ### Shiny
 
-V spodnjem grafičnem prikazu pa je predstavljeno število dijakov - glede na spol - v posamezni vrsti sekundarnega izobraževanja, ki jo bralec izbere sam.
+V spodnjem grafičnem prikazu je predstavljeno število dijakov glede na spol v posamezni vrsti sekundarnega izobraževanja, ki jo bralec izbere sam.
 
-```{r shiny}
+```{r shiny, echo=FALSE}
 shinyAppDir("shiny", options=list(width="100%", height=600))
 ```
+
+Shiny nam v prvem zavihku prikazuje, v katere izobraževalne programe so se v zadnjih desetih letih vpisovali slovenski dijaki in dijakinje. Iz podatov v grafih lahko razberemo, da so se fantje bolj zanimali za tehniške in druge strokovne programe, medtem ko so se dekleta odločile za splošne in strokovne gimnazijske programe.
+Naslednji zavihek pa nam prikazuje, katere izobraževalne programe terciarnega izobraževanja so se v letih 2009-2018 vpisovali moški in ženske. Iz podatkov vidimo, da veliko več diplomira žensk ter da je upad števila diplomantov in 2. bolonjske stopnje glede na 3. veliko opaznejši kot iz 1. stopnje na drugo, kar bi lahko pomenilo, da se v zadnjih letih študentje večinoma šolajo do magisterija.
+
+***
+
+## Zaključek
+
+Tekom analize, sem ugotovila, da so bila nekatere moje domneve napačne. Ena izmed njih je zagotovo ta, da je glede na število prebivalcev, delež dijakov in diplomantov največji v osrednji Sloveniji, kot smo lahko namreč videli, to ni res. Največji delež dijakov in prav tako diplomantov ima Koroška. Poleg tega smo ugotovili, kam se mladi osnovnošolci usmerjajo. Tekom let je viden opazen izpad na poklicnih tehničnih šolah. Na teh poklicnih in strokovnih programih prevladujejo večinoma močki, medtem ko je na splošnih smereh delež žensk večji. Primerjali pa smo tudi število diplomantov na izrednem in rednem študiju. Opazili smo, da je število diplomantov na izrednem študiju trikrat manjše kot na rednem študiju. Vidimo pa tudi, da je v Sloveniji vse več izobraženih ljudi, kar pa menim, da se še nekaj časa nebo spremenilo, saj kot pravijo:"Znanje je moč."
