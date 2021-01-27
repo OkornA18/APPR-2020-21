@@ -10,7 +10,7 @@ shinyServer(function(input, output) {
       geom_col(position="dodge") +
       labs( x='Leto', y = 'Število') + 
       scale_fill_manual(values=c('lightblue', 'purple')) + 
-      scale_x_continuous(breaks = seq(2009, 2018, by=1), limits = c(2009,2018)) +
+      scale_x_continuous(breaks = seq(2009, 2018, by=1), limits = c(2008,2019)) +
       theme_minimal()
     
     print(graf.dijaki)
@@ -23,7 +23,7 @@ shinyServer(function(input, output) {
       geom_col(position="dodge") +
       labs( x='Leto', y = 'Število') + 
       scale_fill_manual(values=c('lightblue', 'purple')) + 
-      scale_x_continuous(breaks = seq(2009, 2018, by=1), limits = c(2009,2018)) +
+      scale_x_continuous(breaks = seq(2009, 2018, by=1), limits = c(2008,2019)) +
       theme_minimal()
     
     print(graf.diplomanti)
