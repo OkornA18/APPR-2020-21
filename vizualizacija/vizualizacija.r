@@ -15,7 +15,7 @@ povprecje.diplomantov.po.regijah <- povprecje.diplomantov.po.regijah[-12,] %>% s
 graf_povprecja_po_regijah <- ggplot(povprecje.dijakovindiplomantov.po.regijah, aes(x=regija, y=povprecje, fill=kategorija)) +
   geom_col(position = 'dodge')  + 
   coord_flip() +
-  labs(x = "Regija", y = "Povprečno število", title = "Povprečno število dijakov in diplomantov na leto v \nposameznih statističnih regijah") +
+  labs(x = "Regija", y = "Povprečno število", title = "Povprečno število dijakov in diplomantov na leto \nv posameznih statističnih regijah") +
   scale_fill_discrete(name = "Kategorija", labels = c("število dijakov", "število diplomantov")) + 
   scale_fill_brewer()
 
@@ -72,7 +72,7 @@ zemljevid1 <- tm_shape(merge(zemljevid, povprecje.diplomantov.po.regijah, by.x="
   tm_style("grey") +
   tm_layout(title="Povprečno število diplomantov po regijah v zadnjih desetih letih")
 
-# GRAF POVPRECJA DIJAKOV GLEDE NA VRSTO IZOBRAZEVANJA IN SPLOL (TO SEM KASNEJE PRIKAZALA V SHINYJU)
+# GRAF POVPRECJA DIJAKOV GLEDE NA VRSTO IZOBRAZEVANJA IN SPOL (TO SEM KASNEJE PRIKAZALA V SHINYJU)
 
 podatki5 <- tabela2nova %>% group_by(izobrazevanje, spol) %>% summarise(povprecje=sum(stevilo)/10)
 graf5 <- ggplot(podatki5, aes(x=izobrazevanje, y=povprecje, fill = spol)) +
@@ -82,7 +82,7 @@ graf5 <- ggplot(podatki5, aes(x=izobrazevanje, y=povprecje, fill = spol)) +
   scale_fill_discrete(name = "Spol", labels = c("moški", "ženski")) + 
   scale_fill_brewer()
 
-# GRAF POVPRECJA DIPLOMANTOV GLEDE NA VRSTO IZOBRAZEVANJA IN SPLOL (TO SEM KASNEJE PRIKAZALA V SHINYJU)
+# GRAF POVPRECJA DIPLOMANTOV GLEDE NA VRSTO IZOBRAZEVANJA IN SPOL (TO SEM KASNEJE PRIKAZALA V SHINYJU)
 
 podatki6 <- tabela3nova %>% group_by(izobrazevanje, spol) %>% summarise(povprecje=sum(stevilo)/10)
 graf6 <- ggplot(podatki6, aes(x=izobrazevanje, y=povprecje, fill = spol)) +

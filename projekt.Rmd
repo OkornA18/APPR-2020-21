@@ -42,30 +42,30 @@ Uvozila sem podatke v obliki CSV in html s statističnega urada. Podatke imam v 
   - `regija` - spremenljivka: ime regije (neurejen faktor),
   - `leto` - spremenljivka (število),
   - `kategorija` - spremenljivka: število dijakov/število študentov (neurejen faktor),
-  - `število` meritev: število dijakov/študentov v pripadajoči regiji(število).
+  - `število` meritev: število dijakov/študentov v pripadajoči regiji (število).
 
 2. `izobraževanja` - podatki o številu dijakov glede na spol in vrsto izobraževanja
   - `izobraževanje` - spremenljivka: vrsta izobraževanja (neurejen faktor),
   - `leto` - spremenljivka (število),
   - `spol` - spremenljivka: moški/ženski spol (neurejen faktor),
-  - `število` meritev: število dijakov glede na spol in vrsto izobraževanja(število).
+  - `število` meritev: število dijakov glede na spol in vrsto izobraževanja (število).
   
 3. `izobraževanja` - podatki o številu študentov glede na spol in vrsto izobraževanja
   - `izobraževanje` - spremenljivka: vrsta izobraževanja (neurejen faktor),
   - `leto` - spremenljivka (število),
   - `spol` - spremenljivka: moški/ženski spol (neurejen faktor),
-  - `število` meritev: število studentov glede na spol in vrsto izobraževanja(število).
+  - `število` meritev: število studentov glede na spol in vrsto izobraževanja (število).
   
 4. `izobraževanja` - podatki o številu študentov glede na način študija in vrsto izobraževanja
   - `izobraževanje` - spremenljivka: vrsta izobraževanja (neurejen faktor),
   - `leto` - spremenljivka (število),
   - `študij` - spremenljivka: redni/izredni študij (neurejen faktor),
-  - `število` meritev: število studentov glede na način študija in vrsto izobraževanja(število).
+  - `število` meritev: število studentov glede na način študija in vrsto izobraževanja (število).
   
 5. `regije` - podatki o številu prebivalcev za vsako regijo
   - `regija` - spremenljivka: ime regije (neurejen faktor),
   - `leto` - spremenljivka (število),
-  - `število` meritev: število prebivalcev v pripadajoči regiji(število).
+  - `število` meritev: število prebivalcev v pripadajoči regiji (število).
 
 ***
 
@@ -79,7 +79,7 @@ Pred analizo teh podatkov sem si zastavila naslednja vprašanja:
 
 - Kje v Sloveniji glede na statistično regijo je največ dijakov, ter kje je največ diplomantov?
 - Kam se v zadnjih desetih letih najbolj usmerjajo mladi, ko se odločajo za srednjo šolo?
-- Kakšen je delež diplomantov, ki diplomira na rednem študiju v primerjavi z izrednim študiju?
+- Kakšen je delež diplomantov, ki diplomira na rednem študiju v primerjavi z izrednim študijem?
 
 
 
@@ -87,7 +87,7 @@ Pred analizo teh podatkov sem si zastavila naslednja vprašanja:
 graf_povprecja_po_regijah
 ```
 
-Prvi graf prikazuje povprečno število dijakov in diplomantov po regijah v zadnjih desetih letih(2009-2018).Glede na število dijakov in število diplomantov lahko razberemo, da je številka dijakov veliko večja kot številka diplomantov, kar pomeni da veliko ljudi ne nadaljuje svojega šolanja na faksu in se raje zaposlijo, ali pa pred diplomiranjem faks pustijo in se zaposlijo. Kot primer lahko vzamemo npr.Osrednje-slovensko regijo, kjer vidimo, da je v zadnjih 10 letih diplomirala le dobra četrtina vseh dijakov v zadnjih desetih letih.
+Prvi graf prikazuje povprečno število dijakov in diplomantov po regijah v zadnjih desetih letih (2009-2018). Glede na število dijakov in število diplomantov lahko razberemo, da je številka dijakov veliko večja kot številka diplomantov, kar pomeni da veliko ljudi ne nadaljuje svojega šolanja na faksu in se raje zaposli, ali pa pred diplomiranjem študij pustijo in se zaposlijo. Kot primer lahko vzamemo npr. Osrednje-slovensko regijo, kjer vidimo, da je v zadnjih 10 letih diplomirala le dobra četrtina vseh dijakov.
 
 
 ```{r zemljevid2, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center'}
@@ -100,7 +100,7 @@ Ta zemljevid nam z razliko od prejšnjega grafa pove bolj koristno informacijo o
  zemljevid3
 ```
 
-Zgornji zemljevid pa nam prikazuje delež dijakov v preučevanih desetih letih glede na število prebivalcev v določeni regiji. Največji delež dijakov pa prav tako lahko vidimo na Koročkem, kjer bilo v povprečju slabih 4,5% prebivalstva dijakov. Ravno obratno pa velja za Zasavsko, Obalno-kraško in Podravsko regijo, kjer se delež giblje med 3 in 3,5 procenti.
+Zgornji zemljevid pa nam prikazuje delež dijakov v preučevanih desetih letih glede na število prebivalcev v določeni regiji. Največji delež dijakov pa prav tako lahko vidimo na Koroškem, kjer bilo v povprečju slabih 4,5% prebivalstva dijakov. Ravno obratno pa velja za Zasavsko, Obalno-kraško in Podravsko regijo, kjer se delež giblje med 3 in 3,5 procenti.
 
 
 ![](pie.jpg)
@@ -116,7 +116,7 @@ Zgornji tortni diagram prikazuje razmerje diplomantov v preučevanih desetih let
 source("analiza/analiza.r", encoding="UTF-8")
 ```
 
-Spodnji graf nam prikazuje kako se razmerje med številom dijakov in številom prebivalcev v Sloveniji spreminja, kot lahko vidimo, je trend trenutno padajoč, kar pomeni, da je kljub višji narodnosti, dijakov vedno manj. To pomeni, da je trenutno v Sloveniji več otrok nižje starosti in več ljudi, ki so že naredili srednjo šolo. Pričakujemo lahko, da bo trend kmalu naraščajoč, saj kljub padajočemu trendu število prebivalcev narašča.
+Spodnji graf nam prikazuje, kako se razmerje med številom dijakov in številom prebivalcev v Sloveniji spreminja, kot lahko vidimo, je trend trenutno padajoč, kar pomeni, da je kljub višji narodnosti dijakov vedno manj. To pomeni, da je trenutno v Sloveniji več otrok nižje starosti in več ljudi, ki so že naredili srednjo šolo. Pričakujemo lahko, da bo trend kmalu naraščajoč, saj kljub padajočemu trendu število prebivalcev narašča.
 
 ```{r graf13, echo=FALSE, fig.align='center'}
 graf13
@@ -139,12 +139,12 @@ shinyAppDir("shiny", options=list(width="100%", height=600))
 ```
 
 Shiny nam v prvem zavihku prikazuje, v katere izobraževalne programe so se v zadnjih desetih letih vpisovali slovenski dijaki in dijakinje. Iz podatov v grafih lahko razberemo, da so se fantje bolj zanimali za tehniške in druge strokovne programe, medtem ko so se dekleta odločile za splošne in strokovne gimnazijske programe.
-Naslednji zavihek pa nam prikazuje, katere izobraževalne programe terciarnega izobraževanja so se v letih 2009-2018 vpisovali moški in ženske. Iz podatkov vidimo, da veliko več diplomira žensk ter da je upad števila diplomantov in 2. bolonjske stopnje glede na 3. veliko opaznejši kot iz 1. stopnje na drugo, kar bi lahko pomenilo, da se v zadnjih letih študentje večinoma šolajo do magisterija.
+Naslednji zavihek pa nam prikazuje, katere izobraževalne programe terciarnega izobraževanja so se v letih 2009-2018 vpisovali moški in ženske. Iz podatkov vidimo, da veliko več diplomira žensk ter da je upad števila diplomantov in 2. bolonjske stopnje glede na 3. veliko opaznejši kot iz 1. stopnje na 2., kar bi lahko pomenilo, da se v zadnjih letih študentje večinoma šolajo do magisterija.
 
 ***
 
 # Zaključek
 
-Tekom analize, sem ugotovila, da so bila nekatere moje domneve napačne. Ena izmed njih je zagotovo ta, da je glede na število prebivalcev, delež dijakov in diplomantov največji v osrednji Sloveniji, kot smo lahko namreč videli, to ni res. Največji delež dijakov in prav tako diplomantov ima Koroška. Poleg tega smo ugotovili, kam se mladi osnovnošolci usmerjajo. Tekom let je viden opazen izpad na poklicnih tehničnih šolah. Na teh poklicnih in strokovnih programih prevladujejo večinoma močki, medtem ko je na splošnih smereh delež žensk večji. Primerjali pa smo tudi število diplomantov na izrednem in rednem študiju. Opazili smo, da je število diplomantov na izrednem študiju trikrat manjše kot na rednem študiju. Vidimo pa tudi, da je v Sloveniji vse več izobraženih ljudi, kar pa menim, da se še nekaj časa ne bo spremenilo, saj kot pravijo:"Znanje je moč."
+Tekom analize, sem ugotovila, da so bila nekatere moje domneve napačne. Ena izmed njih je zagotovo ta, da je glede na število prebivalcev delež dijakov in diplomantov največji v osrednji Sloveniji, kot smo lahko namreč videli, to ni res. Največji delež dijakov in prav tako diplomantov ima Koroška. Poleg tega smo ugotovili, kam se mladi osnovnošolci usmerjajo. Tekom let je viden opazen izpad na poklicnih tehničnih šolah. Na teh poklicnih in strokovnih programih prevladujejo večinoma moški, medtem ko je na splošnih smereh delež žensk večji. Primerjali pa smo tudi število diplomantov na izrednem in rednem študiju. Opazili smo, da je število diplomantov na izrednem študiju trikrat manjše kot na rednem študiju. Vidimo pa tudi, da je v Sloveniji vse več izobraženih ljudi, kar pa menim, da se še nekaj časa ne bo spremenilo, saj kot pravijo: "Znanje je moč."
 
 ***
