@@ -74,6 +74,8 @@ skupnatabela2 <- transform(skupnatabela2, delez = (stevilo.x / stevilo.y)/10)
 skupnatabela2 <- subset(skupnatabela2, select = - stevilo.x)
 skupnatabela2 <- subset(skupnatabela2, select = - stevilo.y)
 
+# spremenjene in združene tabele za linearno regresijo
+
 tabela1novadijaki$leto <- as.numeric(tabela1novadijaki$leto)
 tabela1novadijaki$stevilo <- as.numeric(tabela1novadijaki$stevilo)
 stevilodijakovpoletih <- tabela1novadijaki %>% group_by(leto) %>% summarise(skupaj=sum(stevilo))
