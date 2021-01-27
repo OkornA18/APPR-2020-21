@@ -42,7 +42,7 @@ zemljevida$NAME_1[zemljevida$NAME_1 == "KoroĹˇka"] <- "Koroška"
 zemljevida$NAME_1[zemljevida$NAME_1 == "Notranjsko-kraĹˇka"] <- "Notranjsko-kraška"
 zemljevida$NAME_1[zemljevida$NAME_1 == "Obalno-kraĹˇka"] <- "Obalno-kraška"
 zemljevid2 <- tm_shape(merge(zemljevida, povprecjedipl, by.x="NAME_1", by.y="regija" )) + 
-  tm_polygons("povprecje",title="Delež",palette="Purples")+ tm_style("grey") + tm_layout(main.title="Povprečni delež diplomantov po regijah \nv zadnjih desetih letih glede na \nštevilo prebivalcev v posamezni regiji") + tm_text(text='NAME_1', size=0.6)
+  tm_polygons("povprecje",title="Delež (%)",palette="Purples")+ tm_style("grey") + tm_layout(main.title="Povprečni delež diplomantov po regijah \nv zadnjih desetih letih glede na \nštevilo prebivalcev v posamezni regiji") + tm_text(text='NAME_1', size=0.6)
 
 povprecjedij <- skupnatabela %>% group_by(regija) %>% summarise(povprecje=sum(delez)/10)
 zemljevida2 <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_SVN_shp.zip", "gadm36_SVN_1")
@@ -53,7 +53,7 @@ zemljevida2$NAME_1[zemljevida2$NAME_1 == "Notranjsko-kraĹˇka"] <- "Notranjsko-
 zemljevida2$NAME_1[zemljevida2$NAME_1 == "Obalno-kraĹˇka"] <- "Obalno-kraška"
 
 zemljevid3 <- tm_shape(merge(zemljevida2, povprecjedij, by.x="NAME_1", by.y="regija" )) + 
-  tm_polygons("povprecje",title="Delež",palette="Blues")+
+  tm_polygons("povprecje",title="Delež (%)",palette="Blues")+
   tm_style("grey") +
   tm_layout(main.title="Povprečni delež dijakov po regijah \nv zadnjih desetih letih glede na \nštevilo prebivalcev v posamezni regiji")+ tm_text(text='NAME_1', size=0.6)
 
