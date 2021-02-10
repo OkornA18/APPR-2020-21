@@ -4,7 +4,9 @@ library(gsubfn)
 library(shiny)
 library(tidyr)
 library(tmap)
-source("https://raw.githubusercontent.com/jaanos/APPR-2019-20/master/lib/uvozi.zemljevid.r")
+
+# Uvozimo funkcije za pobiranje in uvoz zemljevida.
+source("lib/uvozi.zemljevid.r", encoding="UTF-8")
 
 options(gsubfn.engine="R")
 
